@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Don't eat alone
+
+  Created by Louis Xia on 14/07/2022.
+  
+*/
+
+"signin.form.alert.title" = "Formulaire Invalide";
+"signin.form.alert.close" = "Fermer";
+"signin.form.alert.invalid" = "Les champs sont obligatoires";
+"signin.form.email.placeholder" = "Email";
+"signin.form.password.placeholder" = "Mot de passe";
+"signin.form.signin.button" = "Connection";
+"signin.form.signup.button" = "Pas de compte? Inscription";
+"signup.form.alert.title" = "Formulaire Invalide";
+"signup.form.alert.close" = "Fermer";
+"signup.form.alert.profileimage.title" = "Image de profil";
+"signup.form.alert.profileimage.message" = "Choisisez votre image de profil";
+"signup.form.alert.profileimage.gallery" = "Galerie";
+"signup.form.alert.profileimage.camera" = "Appareil Photo";
+"signup.form.alert.invalid" = "Les champs sont obligatoires";
+"signup.form.alert.invalid.email" = "Renseigner un email correct";
+"signup.form.alert.invalid.description" = "Le champ description est obligatoire";
+"signup.form.alert.invalid.password" = "Le mot de passe doit contenir au minimun 6 caractères";
+"signup.form.alert.invalid.confirmpassword" = "Les mots de passe doivent être identique";
+"signup.form.firstname.placeholder" = "Prénom";
+"signup.form.lastname.placeholder" = "Nom";
+"signup.form.email.placeholder" = "Email";
+"signup.form.description.placeholder" = "Description";
+"signup.form.password.placeholder" = "Mot de passe";
+"signup.form.confirmpassword.placeholder" = "Confirmer votre mot de passe";
+"signup.form.signup.button" = "S'inscrire";

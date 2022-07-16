@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Don't eat alone
+
+  Created by Louis Xia on 14/07/2022.
+  
+*/
+
+"signin.form.alert.title" = "Invalid form";
+"signin.form.alert.close" = "Close";
+"signin.form.alert.invalid" = "All Fields are mandatory";
+"signin.form.email.placeholder" = "Email";
+"signin.form.password.placeholder" = "Password";
+"signin.form.signin.button" = "Signin";
+"signin.form.signup.button" = "Does not have account? Signup";
+"signup.form.alert.title" = "Invalid form";
+"signup.form.alert.close" = "Close";
+"signup.form.alert.profileimage.title" = "Profile image";
+"signup.form.alert.profileimage.message" = "Choose your profile image";
+"signup.form.alert.profileimage.gallery" = "Gallery";
+"signup.form.alert.profileimage.camera" = "Camera";
+"signup.form.alert.invalid" = "All Fields are mandatory";
+"signup.form.alert.invalid.email" = "Please provide a correct email";
+"signup.form.alert.invalid.description" = "The personal statement field is mandatory";
+"signup.form.alert.invalid.password" = "The password must contains at least 6 characters";
+"signup.form.alert.invalid.confirmpassword" = "The password must be the same";
+"signup.form.firstname.placeholder" = "Firstname";
+"signup.form.lastname.placeholder" = "Lastname";
+"signup.form.email.placeholder" = "Email";
+"signup.form.description.placeholder" = "Personal Statement";
+"signup.form.password.placeholder" = "Password";
+"signup.form.confirmpassword.placeholder" = "Confirm password";
+"signup.form.signup.button" = "Signup";
