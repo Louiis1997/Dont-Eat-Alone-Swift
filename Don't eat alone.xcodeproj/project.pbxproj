@@ -15,6 +15,16 @@
 		BF7D7E6F288093DC00ACC09F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E6D288093DC00ACC09F /* SignupViewController.swift */; };
 		BF7D7E70288093DC00ACC09F /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7D7E6E288093DC00ACC09F /* SignupViewController.xib */; };
 		BF7D7E732880A24800ACC09F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF7D7E752880A24800ACC09F /* Localizable.strings */; };
+		BF7D7E822885981800ACC09F /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E812885981800ACC09F /* RestaurantDetail.swift */; };
+		BF7D7E862885A61300ACC09F /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E852885A61300ACC09F /* Auth.swift */; };
+		BF7D7E902885BB5300ACC09F /* UserLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E8F2885BB5300ACC09F /* UserLike.swift */; };
+		BF7D7E922885BB6800ACC09F /* RestaurantLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E912885BB6800ACC09F /* RestaurantLike.swift */; };
+		BF7D7E942885BB7D00ACC09F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E932885BB7D00ACC09F /* User.swift */; };
+		BF7D7E962886F6D900ACC09F /* LikedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E952886F6D900ACC09F /* LikedUser.swift */; };
+		BF7D7E982886F6EE00ACC09F /* LikingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E972886F6EE00ACC09F /* LikingUser.swift */; };
+		BF7D7E9A2886F98C00ACC09F /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E992886F98C00ACC09F /* RestaurantLocation.swift */; };
+		BF7D7E9C2887065E00ACC09F /* RestaurantPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E9B2887065E00ACC09F /* RestaurantPreview.swift */; };
+		BF7D7E9E28870C9300ACC09F /* Businesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E9D28870C9300ACC09F /* Businesses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +39,16 @@
 		BF7D7E6E288093DC00ACC09F /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		BF7D7E742880A24800ACC09F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BF7D7E7B2880A34000ACC09F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF7D7E812885981800ACC09F /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
+		BF7D7E852885A61300ACC09F /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		BF7D7E8F2885BB5300ACC09F /* UserLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLike.swift; sourceTree = "<group>"; };
+		BF7D7E912885BB6800ACC09F /* RestaurantLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLike.swift; sourceTree = "<group>"; };
+		BF7D7E932885BB7D00ACC09F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BF7D7E952886F6D900ACC09F /* LikedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedUser.swift; sourceTree = "<group>"; };
+		BF7D7E972886F6EE00ACC09F /* LikingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikingUser.swift; sourceTree = "<group>"; };
+		BF7D7E992886F98C00ACC09F /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
+		BF7D7E9B2887065E00ACC09F /* RestaurantPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPreview.swift; sourceTree = "<group>"; };
+		BF7D7E9D28870C9300ACC09F /* Businesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Businesses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +81,59 @@
 		BF7D7E542880919400ACC09F /* Don't eat alone */ = {
 			isa = PBXGroup;
 			children = (
+				BF7D7E8028858F0B00ACC09F /* Controllers */,
+				BF7D7E7D28858EA500ACC09F /* Definition */,
 				BF7D7E552880919400ACC09F /* AppDelegate.swift */,
 				BF7D7E5E2880919500ACC09F /* Assets.xcassets */,
 				BF7D7E602880919500ACC09F /* LaunchScreen.storyboard */,
 				BF7D7E632880919500ACC09F /* Info.plist */,
+				BF7D7E752880A24800ACC09F /* Localizable.strings */,
+			);
+			path = "Don't eat alone";
+			sourceTree = "<group>";
+		};
+		BF7D7E7D28858EA500ACC09F /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+				BF7D7E7F28858ECE00ACC09F /* Services */,
+				BF7D7E7E28858EC700ACC09F /* Model */,
+			);
+			path = Definition;
+			sourceTree = "<group>";
+		};
+		BF7D7E7E28858EC700ACC09F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF7D7E932885BB7D00ACC09F /* User.swift */,
+				BF7D7E852885A61300ACC09F /* Auth.swift */,
+				BF7D7E8F2885BB5300ACC09F /* UserLike.swift */,
+				BF7D7E952886F6D900ACC09F /* LikedUser.swift */,
+				BF7D7E972886F6EE00ACC09F /* LikingUser.swift */,
+				BF7D7E912885BB6800ACC09F /* RestaurantLike.swift */,
+				BF7D7E9B2887065E00ACC09F /* RestaurantPreview.swift */,
+				BF7D7E812885981800ACC09F /* RestaurantDetail.swift */,
+				BF7D7E992886F98C00ACC09F /* RestaurantLocation.swift */,
+				BF7D7E9D28870C9300ACC09F /* Businesses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF7D7E7F28858ECE00ACC09F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BF7D7E8028858F0B00ACC09F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				BF7D7E69288093C700ACC09F /* SigninViewController.swift */,
 				BF7D7E6A288093C700ACC09F /* SigninViewController.xib */,
 				BF7D7E6D288093DC00ACC09F /* SignupViewController.swift */,
 				BF7D7E6E288093DC00ACC09F /* SignupViewController.xib */,
-				BF7D7E752880A24800ACC09F /* Localizable.strings */,
 			);
-			path = "Don't eat alone";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +210,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7D7E982886F6EE00ACC09F /* LikingUser.swift in Sources */,
+				BF7D7E9C2887065E00ACC09F /* RestaurantPreview.swift in Sources */,
 				BF7D7E6F288093DC00ACC09F /* SignupViewController.swift in Sources */,
+				BF7D7E922885BB6800ACC09F /* RestaurantLike.swift in Sources */,
+				BF7D7E9A2886F98C00ACC09F /* RestaurantLocation.swift in Sources */,
+				BF7D7E822885981800ACC09F /* RestaurantDetail.swift in Sources */,
+				BF7D7E9E28870C9300ACC09F /* Businesses.swift in Sources */,
+				BF7D7E862885A61300ACC09F /* Auth.swift in Sources */,
+				BF7D7E942885BB7D00ACC09F /* User.swift in Sources */,
 				BF7D7E6B288093C700ACC09F /* SigninViewController.swift in Sources */,
+				BF7D7E962886F6D900ACC09F /* LikedUser.swift in Sources */,
+				BF7D7E902885BB5300ACC09F /* UserLike.swift in Sources */,
 				BF7D7E562880919400ACC09F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
