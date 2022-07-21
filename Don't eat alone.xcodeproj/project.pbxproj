@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A13CA8228896F5500D85A72 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */; };
+		2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */; };
+		2A13CA8428896F5500D85A72 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */; };
+		2A13CA8528896F5500D85A72 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7E28896F5500D85A72 /* HomeViewController.xib */; };
+		2A13CA8628896F5500D85A72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA7F28896F5500D85A72 /* HomeViewController.swift */; };
+		2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */; };
+		2A13CA8B28896FD700D85A72 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8A28896FD700D85A72 /* MessageViewController.swift */; };
+		2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */; };
 		BF7D7E562880919400ACC09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E552880919400ACC09F /* AppDelegate.swift */; };
 		BF7D7E5F2880919500ACC09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7D7E5E2880919500ACC09F /* Assets.xcassets */; };
 		BF7D7E622880919500ACC09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7D7E602880919500ACC09F /* LaunchScreen.storyboard */; };
@@ -28,6 +36,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
+		2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2A13CA7E28896F5500D85A72 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2A13CA7F28896F5500D85A72 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		2A13CA8928896FD400D85A72 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		2A13CA8A28896FD700D85A72 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMessageViewController.xib; sourceTree = "<group>"; };
+		2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMessageViewController.swift; sourceTree = "<group>"; };
 		BF7D7E522880919400ACC09F /* Don't eat alone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Don't eat alone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D7E552880919400ACC09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF7D7E5E2880919500ACC09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +146,16 @@
 		BF7D7E8028858F0B00ACC09F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */,
+				2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */,
+				2A13CA7F28896F5500D85A72 /* HomeViewController.swift */,
+				2A13CA7E28896F5500D85A72 /* HomeViewController.xib */,
+				2A13CA8A28896FD700D85A72 /* MessageViewController.swift */,
+				2A13CA8928896FD400D85A72 /* MessageViewController.xib */,
+				2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */,
+				2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */,
+				2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */,
+				2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */,
 				BF7D7E69288093C700ACC09F /* SigninViewController.swift */,
 				BF7D7E6A288093C700ACC09F /* SigninViewController.xib */,
 				BF7D7E6D288093DC00ACC09F /* SignupViewController.swift */,
@@ -195,11 +223,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A13CA8228896F5500D85A72 /* ProfileViewController.xib in Resources */,
 				BF7D7E732880A24800ACC09F /* Localizable.strings in Resources */,
 				BF7D7E6C288093C700ACC09F /* SigninViewController.xib in Resources */,
 				BF7D7E622880919500ACC09F /* LaunchScreen.storyboard in Resources */,
 				BF7D7E70288093DC00ACC09F /* SignupViewController.xib in Resources */,
 				BF7D7E5F2880919500ACC09F /* Assets.xcassets in Resources */,
+				2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */,
+				2A13CA8528896F5500D85A72 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,18 +242,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7D7E982886F6EE00ACC09F /* LikingUser.swift in Sources */,
+				2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */,
 				BF7D7E9C2887065E00ACC09F /* RestaurantPreview.swift in Sources */,
 				BF7D7E6F288093DC00ACC09F /* SignupViewController.swift in Sources */,
 				BF7D7E922885BB6800ACC09F /* RestaurantLike.swift in Sources */,
+				2A13CA8428896F5500D85A72 /* ProfileViewController.swift in Sources */,
+				2A13CA8628896F5500D85A72 /* HomeViewController.swift in Sources */,
 				BF7D7E9A2886F98C00ACC09F /* RestaurantLocation.swift in Sources */,
 				BF7D7E822885981800ACC09F /* RestaurantDetail.swift in Sources */,
 				BF7D7E9E28870C9300ACC09F /* Businesses.swift in Sources */,
 				BF7D7E862885A61300ACC09F /* Auth.swift in Sources */,
 				BF7D7E942885BB7D00ACC09F /* User.swift in Sources */,
 				BF7D7E6B288093C700ACC09F /* SigninViewController.swift in Sources */,
+				2A13CA8B28896FD700D85A72 /* MessageViewController.swift in Sources */,
 				BF7D7E962886F6D900ACC09F /* LikedUser.swift in Sources */,
 				BF7D7E902885BB5300ACC09F /* UserLike.swift in Sources */,
 				BF7D7E562880919400ACC09F /* AppDelegate.swift in Sources */,
+				2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
