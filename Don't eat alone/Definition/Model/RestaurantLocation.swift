@@ -15,8 +15,7 @@ class RestaurantLocation {
     }
     
     convenience init?(dict: [String: Any]) {
-        guard let location = dict["location"] as? [String: Any],
-              let display_address = location["display_address"] as? [String] else {
+        guard let display_address = dict["display_address"] as? [String] else {
             return nil
         }
         

@@ -14,11 +14,11 @@ class RestaurantDetail {
     var is_closed: Bool
     var review_count: Int
     var rating: Double
-    var price: String
+    var price: String?
     var location: RestaurantLocation
     var display_phone: String
     
-    init(id: String, name: String, image_url: String, is_closed: Bool, review_count: Int, rating: Double, price: String, location: RestaurantLocation, display_phone: String) {
+    init(id: String, name: String, image_url: String, is_closed: Bool, review_count: Int, rating: Double, price: String?, location: RestaurantLocation, display_phone: String) {
         self.id = id
         self.name = name
         self.image_url = image_url
@@ -37,7 +37,7 @@ class RestaurantDetail {
               let is_closed = dict["is_closed"] as? Bool,
               let review_count = dict["review_count"] as? Int,
               let rating = dict["rating"] as? Double,
-              let price = dict["price"] as? String,
+              let price = dict["price"] as? String?,
               let location = dict["location"] as? [String: Any],
               let locationObject = RestaurantLocation(dict: location),
               let display_phone = dict["display_phone"] as? String else {

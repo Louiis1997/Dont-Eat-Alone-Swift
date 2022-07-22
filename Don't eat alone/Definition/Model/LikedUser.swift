@@ -18,7 +18,7 @@ class LikedUser {
     
     convenience init?(dict: [String: Any]) {
         guard let id = dict["id"] as? Int,
-              let likedUser = dict["likedUser"] as? [String: Any],
+              let likedUser = dict["likingUser"] as? [String: Any],
               let likedUserObject = User(dict: likedUser) else {
             return nil
         }

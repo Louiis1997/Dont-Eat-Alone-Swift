@@ -13,9 +13,9 @@ class User {
     var lastName: String
     var email: String
     var description: String
-    var profilePicture: String?
+    var profilePicture: String
     
-    init(id: Int, firstName: String, lastName: String, email: String, description: String, profilePicture: String?) {
+    init(id: Int, firstName: String, lastName: String, email: String, description: String, profilePicture: String) {
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
@@ -30,10 +30,9 @@ class User {
               let lastName = dict["firstName"] as? String,
               let email = dict["email"] as? String,
               let description = dict["description"] as? String,
-              let profilePicture = dict["profilePicture"] as? String else {
+              let profilePicture = dict["profilePicture"] as? String? ?? "" else {
             return nil
         }
-        
         self.init(id: id, firstName: firstName, lastName: lastName, email: email, description: description, profilePicture: profilePicture)
     }
 }
