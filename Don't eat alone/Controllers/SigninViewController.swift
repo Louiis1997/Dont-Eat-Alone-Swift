@@ -34,8 +34,17 @@ class SigninViewController: UIViewController , UITextFieldDelegate {
             self.displayErrorMessage(title: NSLocalizedString("signin.form.alert.title", comment: ""), message: NSLocalizedString("signin.form.alert.invalid", comment: ""))
             return
         }
-       // GERER CALL API POUR CONNECTER L'UTILISATEUR Si OK ->
-        //self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        AuthWebService.shared.AuthLogin(email: email, password: pwd, completion: { err in
+            if err == true {
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.displayErrorMessage(title: NSLocalizedString("signin.form.alert.title", comment: ""), message: NSLocalizedString("signin.form.alert.wrongCredentials", comment: ""))
+                }
+            }
+        })
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

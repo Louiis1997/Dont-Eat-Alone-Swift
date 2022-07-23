@@ -10,7 +10,7 @@ import Foundation
 class AuthWebService : AuthService {
     public static let shared: AuthService = AuthWebService()
     
-    func AuthLogin(email: String, password: String, completion: @escaping (Token) -> Void) {
+    func AuthLogin(email: String, password: String, completion: @escaping (Bool) -> Void) {
         let url = URL(string: "http://localhost:3000/api/auth/login")
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
@@ -23,32 +23,40 @@ class AuthWebService : AuthService {
             request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
         } catch let error {
             print(error.localizedDescription)
+            completion(false)
             return
         }
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 print("Post Request Error: \(error.localizedDescription)")
+                completion(false)
                 return
             }
             guard let httpResponse = response as? HTTPURLResponse,
                   200 == httpResponse.statusCode else {
                 print("Invalid Response received from the server: \((response as? HTTPURLResponse)!.statusCode)")
+                completion(false)
                 return
             }
-            guard let responseData = data else {
-                print("nil Data received from the server")
-                return
-            }
+            let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            let filePath = URL(fileURLWithPath: "token.txt", relativeTo: urls[0])
+            print(filePath)
             do {
-                if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
-                    let token = Token(dict: jsonResponse)
-                    completion(token!)
-                } else {
-                    print("data maybe corrupted or in wrong format")
-                    throw URLError(.badServerResponse)
+                let responseData = data
+                guard let json = try? JSONSerialization.jsonObject(with: responseData!, options: .allowFragments) as? [String: Any] else {
+                    print("Json Serialization failed")
+                    completion(false)
+                    return
                 }
-            } catch let error {
-                print(error.localizedDescription)
+                guard let user = Token(dict: json) else {
+                    print("Mapping Json to User failed")
+                    completion(false)
+                    return
+                }
+                try user.access_token.write(to: filePath, atomically: true, encoding: String.Encoding.utf8)
+                completion(true)
+            } catch {
+                completion(false)
             }
         }
         task.resume()

@@ -9,6 +9,7 @@
 "signin.form.alert.title" = "Formulaire Invalide";
 "signin.form.alert.close" = "Fermer";
 "signin.form.alert.invalid" = "Les champs sont obligatoires";
+"signin.form.alert.wrongCredentials" = "Identifiant incorrect";
 "signin.form.email.placeholder" = "Email";
 "signin.form.password.placeholder" = "Mot de passe";
 "signin.form.signin.button" = "Connection";

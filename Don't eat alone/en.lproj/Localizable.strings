@@ -9,6 +9,7 @@
 "signin.form.alert.title" = "Invalid form";
 "signin.form.alert.close" = "Close";
 "signin.form.alert.invalid" = "All Fields are mandatory";
+"signin.form.alert.wrongCredentials" = "Wrong credentials provided";
 "signin.form.email.placeholder" = "Email";
 "signin.form.password.placeholder" = "Password";
 "signin.form.signin.button" = "Signin";

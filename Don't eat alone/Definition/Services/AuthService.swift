@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AuthService {    
-    func AuthLogin(email:String, password: String, completion: @escaping (Token) -> Void)
+    func AuthLogin(email:String, password: String, completion: @escaping (Bool) -> Void)
     
     func AuthRegister(firstName: String, lastName: String, email: String, password: String, description: String)
 }
