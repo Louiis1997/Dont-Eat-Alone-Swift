@@ -42,52 +42,18 @@ class MessageWebService : MessageService {
         dataTask.resume()
     }
     
-    func fetchMessageSendTo(receiverId: Int, completion: @escaping ([Message]) -> Void) {
-        guard let url = URL(string: "http://localhost:3000/api/messages/sendto/\(receiverId)") else {
+    func fetchMessages(token: String, completion: @escaping ([Message]) -> Void) {
+        guard let url = URL(string: "http://localhost:3000/api/messages") else {
             completion([])
             return
         }
         var request = URLRequest(url: url)
             request.httpMethod = "GET"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         let dataTask = URLSession.shared.dataTask(with: request) { data, res, err in
             if let err = err {
                 print("Get Messages Send To Request Error: \(err.localizedDescription)")
-                return
-            }
-            guard let httpResponse = res as? HTTPURLResponse,
-                  200 == httpResponse.statusCode else {
-                print("Invalid Response received from the server: \((res as? HTTPURLResponse)!.statusCode)")
-                return
-            }
-            guard err == nil,
-                  let fetchData = data,
-                  let json = try? JSONSerialization.jsonObject(with: fetchData, options:
-                        .fragmentsAllowed) as? [[String: Any]] else {
-                DispatchQueue.main.async {
-                    completion([])
-                }
-                return
-            }
-            let messages : [Message] = json.compactMap { obj in
-                return Message(dict: obj)
-            }
-            DispatchQueue.main.async {
-                completion(messages)
-            }
-        }
-        dataTask.resume()
-    }
-    
-    func fetchMessageReceivedFrom(senderId: Int, completion: @escaping ([Message]) -> Void) {
-        guard let url = URL(string: "http://localhost:3000/api/messages/sendto/\(senderId)") else {
-            completion([])
-            return
-        }
-        var request = URLRequest(url: url)
-            request.httpMethod = "GET"
-        let dataTask = URLSession.shared.dataTask(with: request) { data, res, err in
-            if let err = err {
-                print("Get Messages Received From Request Error: \(err.localizedDescription)")
                 return
             }
             guard let httpResponse = res as? HTTPURLResponse,
