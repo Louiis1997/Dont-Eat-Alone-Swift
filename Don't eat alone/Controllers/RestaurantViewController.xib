@@ -70,13 +70,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WP2-VH-wCw">
-                    <rect key="frame" x="5" y="813" width="414" height="49"/>
+                    <rect key="frame" x="4" y="813" width="414" height="49"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <items>
-                        <tabBarItem title="Profil" image="face.smiling" catalog="system" id="oAp-Lj-BgK" userLabel="Match"/>
-                        <tabBarItem tag="1" title="Messages" image="message" catalog="system" id="Fjm-oj-ekr" userLabel="Messages"/>
-                        <tabBarItem tag="2" title="Match" image="house.fill" catalog="system" id="YUk-iS-zgo"/>
+                        <tabBarItem tag="1" title="Home" image="house" catalog="system" id="mKg-eQ-0P5"/>
+                        <tabBarItem tag="2" title="Messages" image="message" catalog="system" id="oAp-Lj-BgK" userLabel="Match"/>
+                        <tabBarItem tag="3" title="Profil" image="face.smiling" catalog="system" id="Fjm-oj-ekr" userLabel="Messages"/>
                     </items>
                 </tabBar>
             </subviews>
@@ -87,7 +87,7 @@
     </objects>
     <resources>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

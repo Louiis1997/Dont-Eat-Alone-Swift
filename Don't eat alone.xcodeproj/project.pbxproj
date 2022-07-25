@@ -15,6 +15,8 @@
 		2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */; };
 		2A13CA8B28896FD700D85A72 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8A28896FD700D85A72 /* MessageViewController.swift */; };
 		2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */; };
+		2A4402DB288E2AC30066442C /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4402D9288E2AC30066442C /* MatchViewController.swift */; };
+		2A4402DC288E2AC30066442C /* MatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4402DA288E2AC30066442C /* MatchViewController.xib */; };
 		BF3E72312887571C00C9B79A /* RestaurantLikeByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E72302887571C00C9B79A /* RestaurantLikeByUser.swift */; };
 		BF3E72332888E72800C9B79A /* UserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E72322888E72800C9B79A /* UserWebService.swift */; };
 		BF3E72352888E73600C9B79A /* AuthWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E72342888E73600C9B79A /* AuthWebService.swift */; };
@@ -60,6 +62,8 @@
 		2A13CA8A28896FD700D85A72 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMessageViewController.xib; sourceTree = "<group>"; };
 		2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMessageViewController.swift; sourceTree = "<group>"; };
+		2A4402D9288E2AC30066442C /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		2A4402DA288E2AC30066442C /* MatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchViewController.xib; sourceTree = "<group>"; };
 		BF3E72302887571C00C9B79A /* RestaurantLikeByUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLikeByUser.swift; sourceTree = "<group>"; };
 		BF3E72322888E72800C9B79A /* UserWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebService.swift; sourceTree = "<group>"; };
 		BF3E72342888E73600C9B79A /* AuthWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebService.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */,
 				2A13CA7F28896F5500D85A72 /* HomeViewController.swift */,
 				2A13CA7E28896F5500D85A72 /* HomeViewController.xib */,
+				2A4402D9288E2AC30066442C /* MatchViewController.swift */,
+				2A4402DA288E2AC30066442C /* MatchViewController.xib */,
 				2A13CA8A28896FD700D85A72 /* MessageViewController.swift */,
 				2A13CA8928896FD400D85A72 /* MessageViewController.xib */,
 				2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */,
@@ -286,6 +292,7 @@
 				BF7D7E6C288093C700ACC09F /* SigninViewController.xib in Resources */,
 				BF7D7E622880919500ACC09F /* LaunchScreen.storyboard in Resources */,
 				BF7D7E70288093DC00ACC09F /* SignupViewController.xib in Resources */,
+				2A4402DC288E2AC30066442C /* MatchViewController.xib in Resources */,
 				BF7D7E5F2880919500ACC09F /* Assets.xcassets in Resources */,
 				2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */,
 				2A13CA8528896F5500D85A72 /* HomeViewController.xib in Resources */,
@@ -317,6 +324,7 @@
 				BF7D7E822885981800ACC09F /* RestaurantDetail.swift in Sources */,
 				BF3E723D2889800700C9B79A /* MessageService.swift in Sources */,
 				BF7D7E862885A61300ACC09F /* Token.swift in Sources */,
+				2A4402DB288E2AC30066442C /* MatchViewController.swift in Sources */,
 				BF3E72392888E75300C9B79A /* UserLikeWebService.swift in Sources */,
 				BF3E7241288B1B6200C9B79A /* Match.swift in Sources */,
 				BF7D7E942885BB7D00ACC09F /* User.swift in Sources */,

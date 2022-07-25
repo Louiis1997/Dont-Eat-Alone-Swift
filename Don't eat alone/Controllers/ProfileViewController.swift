@@ -20,13 +20,12 @@ class ProfileViewController: UIViewController {
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if(item.tag == 0) {
-            self.navigationController?.pushViewController(ProfileViewController(), animated: true)
-            } else if(item.tag == 1) {
-                self.navigationController?.pushViewController(MessageViewController(), animated: true)
+        if(item.tag == 1) {
+            self.navigationController?.pushViewController(MatchViewController(), animated: true)
             } else if(item.tag == 2) {
-                self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                self.navigationController?.pushViewController(MessageViewController(), animated: true)
+            } else if(item.tag == 3) {
+                self.navigationController?.pushViewController(ProfileViewController(), animated: true)
             }
     }
-
 }
