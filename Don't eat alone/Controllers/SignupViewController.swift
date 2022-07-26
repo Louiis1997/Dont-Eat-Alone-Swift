@@ -82,8 +82,18 @@ class SignupViewController: UIViewController , UITextFieldDelegate, UINavigation
             self.displayErrorMessage(title: NSLocalizedString("signup.form.alert.title", comment: ""), message: NSLocalizedString("signup.form.alert.invalid.confirmpassword", comment: ""))
             return
         }
-        // GERER CALL API POUR AJOUTER L'UTILISATEUR Si OK
-        self.navigationController?.pushViewController(SigninViewController(), animated: true)
+        let image : String = ProfileImageView.image?.pngData()?.base64EncodedString() ?? "";
+        AuthWebService.shared.AuthRegister(pdp: image, firstName: fn, lastName: ln, email: email, password: pwd, description: ps, completion : { bool in
+            if bool == true {
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(SigninViewController(), animated: true)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.displayErrorMessage(title: NSLocalizedString("signin.form.alert.title", comment: ""), message: NSLocalizedString("signin.form.alert.failed", comment: ""))
+                }
+            }
+        })
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

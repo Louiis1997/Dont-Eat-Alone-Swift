@@ -34,8 +34,8 @@ class SigninViewController: UIViewController , UITextFieldDelegate {
             self.displayErrorMessage(title: NSLocalizedString("signin.form.alert.title", comment: ""), message: NSLocalizedString("signin.form.alert.invalid", comment: ""))
             return
         }
-        AuthWebService.shared.AuthLogin(email: email, password: pwd, completion: { err in
-            if err == true {
+        AuthWebService.shared.AuthLogin(email: email, password: pwd, completion: { bool in
+            if bool == true {
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(HomeViewController(), animated: true)
                 }

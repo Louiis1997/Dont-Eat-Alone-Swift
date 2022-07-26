@@ -6,13 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
 class AuthWebService : AuthService {
     public static let shared: AuthService = AuthWebService()
     
     func AuthLogin(email: String, password: String, completion: @escaping (Bool) -> Void) {
-        let url = URL(string: "http://localhost:3000/api/auth/login")
-        var request = URLRequest(url: url!)
+        guard let url = URL(string: "http://localhost:3000/api/auth/login") else {
+            completion(false)
+            return
+        }
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let body: [String: Any] = [
@@ -62,12 +66,16 @@ class AuthWebService : AuthService {
         task.resume()
     }
     
-    func AuthRegister(firstName: String, lastName: String, email: String, password: String, description: String) {
-        let url = URL(string: "http://localhost:3000/api/auth/register")
-        var request = URLRequest(url: url!)
+    func AuthRegister(pdp: String, firstName: String, lastName: String, email: String, password: String, description: String, completion: @escaping (Bool) -> Void) {
+        guard let url = URL(string: "http://localhost:3000/api/auth/register") else {
+            completion(false)
+            return
+        }
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let body: [String: Any] = [
+            "profilePicture": pdp,
             "firstName": firstName,
             "lastName": lastName,
             "email": email,
@@ -78,19 +86,23 @@ class AuthWebService : AuthService {
            request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .prettyPrinted)
         } catch let error {
             print(error.localizedDescription)
+            completion(false)
             return
         }
           
         let dataTask = URLSession.shared.dataTask(with: request) { data, res, err in
             if let err = err {
                 print("Post Request Error: \(err.localizedDescription)")
+                completion(false)
                 return
             }
             guard let httpResponse = res as? HTTPURLResponse,
                   201 == httpResponse.statusCode else {
                 print("Invalid Response received from the server: \((res as? HTTPURLResponse)!.statusCode)")
+                completion(false)
                 return
             }
+            completion(true)
         }
         dataTask.resume()
     }
