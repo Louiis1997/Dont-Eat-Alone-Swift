@@ -10,5 +10,5 @@ import Foundation
 protocol MessageService {
     func createMessage(token: String, receiverId: Int, content: String)
     
-    func fetchMessages(token: String, completion: @escaping ([Message]) -> Void)
+    func fetchMessages(token: String, userId: Int, completion: @escaping ([Message]) -> Void)
 }

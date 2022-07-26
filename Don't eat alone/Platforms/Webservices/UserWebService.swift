@@ -72,6 +72,40 @@ class UserWebService : UserService {
         dataTask.resume()
     }
     
+    func getLoggedUser(token:String, completion: @escaping (User) -> Void) {
+        
+        guard let url = URL(string: "http://localhost:3000/api/users/logged") else {
+                return
+        }
+        var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { data, res, err in
+            if let err = err {
+                print("Get logged User Request Error: \(err.localizedDescription)")
+                return
+            }
+            guard let httpResponse = res as? HTTPURLResponse,
+                  200 == httpResponse.statusCode else {
+                print("Invalid Response received from the server: \((res as? HTTPURLResponse)!.statusCode)")
+                return
+            }
+            guard let fetchData = data,
+            let json = try? JSONSerialization.jsonObject(with: fetchData, options: .allowFragments),
+                  let json =  json as? [String: Any] else {
+                print("Json Serialization failed")
+                return
+            }
+            guard let user = User(dict: json) else {
+                print("Mapping Json to User failed")
+                return
+            }
+            completion(user)
+        }
+        dataTask.resume()
+    }
+    
     func updateUser(token:String, firstName: String, lastName: String, email: String, password: String, description: String) {
         
         guard let url = URL(string: "http://localhost:3000/api/users") else {

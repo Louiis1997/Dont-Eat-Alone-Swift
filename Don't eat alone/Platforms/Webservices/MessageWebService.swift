@@ -42,8 +42,8 @@ class MessageWebService : MessageService {
         dataTask.resume()
     }
     
-    func fetchMessages(token: String, completion: @escaping ([Message]) -> Void) {
-        guard let url = URL(string: "http://localhost:3000/api/messages") else {
+    func fetchMessages(token: String, userId: Int, completion: @escaping ([Message]) -> Void) {
+        guard let url = URL(string: "http://localhost:3000/api/messages/\(userId)") else {
             completion([])
             return
         }
