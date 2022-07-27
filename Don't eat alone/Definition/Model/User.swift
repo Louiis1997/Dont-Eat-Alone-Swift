@@ -27,7 +27,7 @@ class User {
     convenience init?(dict: [String: Any]) {
         guard let id = dict["id"] as? Int,
               let firstName = dict["firstName"] as? String,
-              let lastName = dict["firstName"] as? String,
+              let lastName = dict["lastName"] as? String,
               let email = dict["email"] as? String,
               let description = dict["description"] as? String,
               let profilePicture = dict["profilePicture"] as? String? ?? "" else {

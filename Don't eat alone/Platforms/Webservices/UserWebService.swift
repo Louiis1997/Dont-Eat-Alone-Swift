@@ -11,7 +11,7 @@ class UserWebService : UserService {
     public static let shared: UserService = UserWebService()
     
     func fetchUserById(id: Int, completion: @escaping (User) -> Void) {
-        guard let url = URL(string: "http://localhost:3000/api/users/id/4") else {
+        guard let url = URL(string: "http://localhost:3000/api/users/id/\(id)") else {
             return
         }
         var request = URLRequest(url: url)

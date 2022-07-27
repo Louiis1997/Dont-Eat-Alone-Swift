@@ -24,6 +24,10 @@ class SigninViewController: UIViewController , UITextFieldDelegate {
         self.PasswordTextField.delegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     @IBAction func handleSignin(_ sender: Any) {
         guard let email = self.EmailTextField.text,
               let pwd = self.PasswordTextField.text else {

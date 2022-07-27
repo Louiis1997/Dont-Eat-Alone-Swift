@@ -10,8 +10,6 @@
 		2A13CA8228896F5500D85A72 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */; };
 		2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */; };
 		2A13CA8428896F5500D85A72 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */; };
-		2A13CA8528896F5500D85A72 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7E28896F5500D85A72 /* HomeViewController.xib */; };
-		2A13CA8628896F5500D85A72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA7F28896F5500D85A72 /* HomeViewController.swift */; };
 		2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */; };
 		2A13CA8B28896FD700D85A72 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8A28896FD700D85A72 /* MessageViewController.swift */; };
 		2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */; };
@@ -49,14 +47,16 @@
 		BF7D7EA92887411600ACC09F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7EA82887411600ACC09F /* AuthService.swift */; };
 		BF7D7EAB2887413600ACC09F /* UserLikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7EAA2887413600ACC09F /* UserLikeService.swift */; };
 		BF7D7EAD2887415000ACC09F /* RestaurantLikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7EAC2887415000ACC09F /* RestaurantLikeService.swift */; };
+		BF8354512890395F00C1C7F2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83544F2890395F00C1C7F2 /* HomeTableViewCell.swift */; };
+		BF8354522890395F00C1C7F2 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8354502890395F00C1C7F2 /* HomeTableViewCell.xib */; };
+		BF8354552890671800C1C7F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8354532890671800C1C7F2 /* HomeViewController.swift */; };
+		BF8354562890671800C1C7F2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8354542890671800C1C7F2 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		2A13CA7E28896F5500D85A72 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		2A13CA7F28896F5500D85A72 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		2A13CA8928896FD400D85A72 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		2A13CA8A28896FD700D85A72 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +99,10 @@
 		BF7D7EA82887411600ACC09F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		BF7D7EAA2887413600ACC09F /* UserLikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLikeService.swift; sourceTree = "<group>"; };
 		BF7D7EAC2887415000ACC09F /* RestaurantLikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLikeService.swift; sourceTree = "<group>"; };
+		BF83544F2890395F00C1C7F2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		BF8354502890395F00C1C7F2 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		BF8354532890671800C1C7F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF8354542890671800C1C7F2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,22 +191,24 @@
 		BF7D7E8028858F0B00ACC09F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */,
-				2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */,
-				2A13CA7F28896F5500D85A72 /* HomeViewController.swift */,
-				2A13CA7E28896F5500D85A72 /* HomeViewController.xib */,
-				2A4402D9288E2AC30066442C /* MatchViewController.swift */,
-				2A4402DA288E2AC30066442C /* MatchViewController.xib */,
-				2A13CA8A28896FD700D85A72 /* MessageViewController.swift */,
-				2A13CA8928896FD400D85A72 /* MessageViewController.xib */,
-				2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */,
-				2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */,
-				2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */,
-				2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */,
 				BF7D7E69288093C700ACC09F /* SigninViewController.swift */,
 				BF7D7E6A288093C700ACC09F /* SigninViewController.xib */,
 				BF7D7E6D288093DC00ACC09F /* SignupViewController.swift */,
 				BF7D7E6E288093DC00ACC09F /* SignupViewController.xib */,
+				BF8354532890671800C1C7F2 /* HomeViewController.swift */,
+				BF8354542890671800C1C7F2 /* HomeViewController.xib */,
+				BF83544F2890395F00C1C7F2 /* HomeTableViewCell.swift */,
+				BF8354502890395F00C1C7F2 /* HomeTableViewCell.xib */,
+				2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */,
+				2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */,
+				2A4402D9288E2AC30066442C /* MatchViewController.swift */,
+				2A4402DA288E2AC30066442C /* MatchViewController.xib */,
+				2A13CA8A28896FD700D85A72 /* MessageViewController.swift */,
+				2A13CA8928896FD400D85A72 /* MessageViewController.xib */,
+				2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */,
+				2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */,
+				2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */,
+				2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,8 +300,9 @@
 				BF7D7E70288093DC00ACC09F /* SignupViewController.xib in Resources */,
 				2A4402DC288E2AC30066442C /* MatchViewController.xib in Resources */,
 				BF7D7E5F2880919500ACC09F /* Assets.xcassets in Resources */,
+				BF8354562890671800C1C7F2 /* HomeViewController.xib in Resources */,
 				2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */,
-				2A13CA8528896F5500D85A72 /* HomeViewController.xib in Resources */,
+				BF8354522890395F00C1C7F2 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +316,7 @@
 				BF7D7E982886F6EE00ACC09F /* LikingUser.swift in Sources */,
 				2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */,
 				BF7D7EA3288740D400ACC09F /* YelpService.swift in Sources */,
+				BF8354552890671800C1C7F2 /* HomeViewController.swift in Sources */,
 				BF7D7E9C2887065E00ACC09F /* RestaurantPreview.swift in Sources */,
 				BF7D7EAB2887413600ACC09F /* UserLikeService.swift in Sources */,
 				BF7D7E6F288093DC00ACC09F /* SignupViewController.swift in Sources */,
@@ -318,7 +326,6 @@
 				BF7D7EAD2887415000ACC09F /* RestaurantLikeService.swift in Sources */,
 				BF7D7E922885BB6800ACC09F /* RestaurantLike.swift in Sources */,
 				2A13CA8428896F5500D85A72 /* ProfileViewController.swift in Sources */,
-				2A13CA8628896F5500D85A72 /* HomeViewController.swift in Sources */,
 				BF7D7E9A2886F98C00ACC09F /* RestaurantLocation.swift in Sources */,
 				BF3E72352888E73600C9B79A /* AuthWebService.swift in Sources */,
 				BF7D7E822885981800ACC09F /* RestaurantDetail.swift in Sources */,
@@ -338,6 +345,7 @@
 				BF7D7EA5288740F700ACC09F /* YelpWebService.swift in Sources */,
 				BF3E723B28897EE500C9B79A /* Message.swift in Sources */,
 				BF7D7E562880919400ACC09F /* AppDelegate.swift in Sources */,
+				BF8354512890395F00C1C7F2 /* HomeTableViewCell.swift in Sources */,
 				2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

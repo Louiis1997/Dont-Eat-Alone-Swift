@@ -33,3 +33,9 @@
 "signup.form.password.placeholder" = "Mot de passe";
 "signup.form.confirmpassword.placeholder" = "Confirmer votre mot de passe";
 "signup.form.signup.button" = "S'inscrire";
+"home.tabBarItem.home.title" = "Accueil";
+"home.tabBarItem.profile.title" = "Profil";
+"home.disconnect.button" = "Déconnexion";
+"edit.firstname.placeholder" = "Prénom : ";
+"edit.lastname.placeholder" = "Nom : ";
+"edit.personalStatement.placeholder" = "Description : ";

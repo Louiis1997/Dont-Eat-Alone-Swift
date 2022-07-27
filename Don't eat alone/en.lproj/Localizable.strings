@@ -33,3 +33,9 @@
 "signup.form.password.placeholder" = "Password";
 "signup.form.confirmpassword.placeholder" = "Confirm password";
 "signup.form.signup.button" = "Signup";
+"home.tabBarItem.home.title" = "Home";
+"home.tabBarItem.profile.title" = "Profile";
+"home.disconnect.button" = "Logout";
+"edit.firstname.placeholder" = "Firstname : ";
+"edit.lastname.placeholder" = "Lastname : ";
+"edit.personalStatement.placeholder" = "Personal Statement : ";

@@ -34,6 +34,10 @@ class SignupViewController: UIViewController , UITextFieldDelegate, UINavigation
         self.ConfirmPasswordTextField.delegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func handleProfileImage(_ sender: Any) {
         let alert = UIAlertController(title: NSLocalizedString("signup.form.alert.profileimage.title", comment: ""), message: NSLocalizedString("signup.form.alert.profileimage.message", comment: ""), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("signup.form.alert.profileimage.gallery", comment: ""), style: .default, handler: { alert in
