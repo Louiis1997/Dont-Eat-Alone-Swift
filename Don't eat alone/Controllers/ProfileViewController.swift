@@ -65,7 +65,12 @@ class ProfileViewController: UIViewController, UITabBarDelegate {
         if(item == homeItem) {
             self.navigationController?.pushViewController(SetDistanceViewController(), animated: true)
         } else if(item == messageItem) {
-            self.navigationController?.pushViewController(UsersDMViewController(), animated: true)
+            UserWebService.shared.fetchUsers { users in
+                DispatchQueue.main.async {
+                    let chat = UsersDMViewController.newInstance(users: users)
+                    self.navigationController?.pushViewController(chat, animated: true)
+                }
+            }
         }
     }
     

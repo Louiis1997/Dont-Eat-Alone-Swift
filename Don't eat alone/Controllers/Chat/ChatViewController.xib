@@ -15,7 +15,6 @@
                 <outlet property="MessageTextField" destination="Kho-yc-y6p" id="S5M-bl-0N2"/>
                 <outlet property="NameLabel" destination="Es6-T8-2hB" id="Khh-Bj-acY"/>
                 <outlet property="avatarImageView" destination="SLg-32-s75" id="gBO-Fg-VJK"/>
-                <outlet property="goBackButton" destination="k55-Zc-h5x" id="Fum-Ej-NGy"/>
                 <outlet property="messagesTableView" destination="phP-dC-aAA" id="df4-Gs-92R"/>
                 <outlet property="sendButton" destination="q2u-c3-xDi" id="bzx-PJ-FMC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -50,19 +49,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2u-c3-xDi">
                     <rect key="frame" x="330.5" y="818" width="73.5" height="34"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" image="paperplane.fill" catalog="system"/>
+                    <buttonConfiguration key="configuration" style="gray" image="paperplane.fill" catalog="system" title=""/>
                     <connections>
                         <action selector="handleSendMessage:" destination="-1" eventType="touchUpInside" id="hFX-g5-lag"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k55-Zc-h5x">
-                    <rect key="frame" x="358" y="70" width="46" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="">
-                        <imageReference key="image" image="arrow.uturn.right" catalog="system" symbolScale="large"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="handleGoBack:" destination="-1" eventType="touchUpInside" id="kmM-Y1-t3P"/>
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="phP-dC-aAA">
@@ -80,14 +69,12 @@
                 <constraint firstItem="SLg-32-s75" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.15" id="O66-Fl-1Mp"/>
                 <constraint firstItem="q2u-c3-xDi" firstAttribute="height" secondItem="Kho-yc-y6p" secondAttribute="height" id="QJR-3Q-rBX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q2u-c3-xDi" secondAttribute="bottom" constant="10" id="SYz-Rv-tPe"/>
-                <constraint firstItem="k55-Zc-h5x" firstAttribute="centerY" secondItem="SLg-32-s75" secondAttribute="centerY" id="W5x-aq-YeP"/>
                 <constraint firstItem="q2u-c3-xDi" firstAttribute="leading" secondItem="Kho-yc-y6p" secondAttribute="trailing" constant="10" id="Yhb-Kf-RNq"/>
                 <constraint firstItem="Es6-T8-2hB" firstAttribute="centerY" secondItem="SLg-32-s75" secondAttribute="centerY" id="bgn-v2-VdR"/>
                 <constraint firstItem="phP-dC-aAA" firstAttribute="top" secondItem="SLg-32-s75" secondAttribute="bottom" constant="15" id="gHr-so-MhU"/>
                 <constraint firstItem="phP-dC-aAA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="iDv-EI-5HU"/>
                 <constraint firstItem="SLg-32-s75" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="imJ-hs-Y5Z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Kho-yc-y6p" secondAttribute="bottom" constant="10" id="l68-eh-AkP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k55-Zc-h5x" secondAttribute="trailing" constant="10" id="ogY-Bt-uW4"/>
                 <constraint firstItem="Es6-T8-2hB" firstAttribute="leading" secondItem="SLg-32-s75" secondAttribute="trailing" constant="10" id="sNs-vd-xfb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q2u-c3-xDi" secondAttribute="trailing" constant="10" id="w9y-dB-JWC"/>
                 <constraint firstItem="Kho-yc-y6p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="wWh-Qk-Ng3"/>
@@ -97,7 +84,6 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow.uturn.right" catalog="system" width="128" height="112"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">

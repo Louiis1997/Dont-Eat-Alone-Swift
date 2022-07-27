@@ -61,7 +61,7 @@ class ChatViewController: UIViewController, UITextFieldDelegate, UITableViewDele
             guard let jwtToken = try? String(contentsOf: filePath) else {
                 return
             }
-            MessageWebService.shared.createMessage(token: jwtToken, receiverId: receiver.id, content: message) { message in
+            MessageWebService.shared.createMessage(token: jwtToken, receiverId: self.receiver.id, content: message) { message in
                 self.messages.append(message)
                 print(message)
             }

@@ -23,8 +23,8 @@
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="dYL-a9-a5n">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysm-Jr-xY7">
-                                        <rect key="frame" x="10" y="10" width="69" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysm-Jr-xY7">
+                                        <rect key="frame" x="10" y="10" width="240" height="29"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,6 +34,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ysm-Jr-xY7" firstAttribute="top" secondItem="dYL-a9-a5n" secondAttribute="top" constant="10" id="4Iq-eI-iXJ"/>
+                                    <constraint firstItem="ysm-Jr-xY7" firstAttribute="width" secondItem="dYL-a9-a5n" secondAttribute="width" multiplier="0.8" id="KFy-Cr-nug"/>
                                     <constraint firstItem="ysm-Jr-xY7" firstAttribute="leading" secondItem="dYL-a9-a5n" secondAttribute="leading" constant="10" id="aSJ-d5-2cg"/>
                                     <constraint firstAttribute="bottom" secondItem="ysm-Jr-xY7" secondAttribute="bottom" constant="10" id="h1V-9j-aSC"/>
                                 </constraints>
@@ -42,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="49" width="300" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEo-gh-HBI">
-                                        <rect key="frame" x="105" y="0.0" width="90" height="21"/>
+                                        <rect key="frame" x="30" y="0.0" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -50,7 +51,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="FEo-gh-HBI" firstAttribute="centerX" secondItem="yDB-gS-TeN" secondAttribute="centerX" id="SaO-1v-1Pu"/>
+                                    <constraint firstItem="FEo-gh-HBI" firstAttribute="leading" secondItem="yDB-gS-TeN" secondAttribute="leading" constant="30" id="Kaq-N3-Wxj"/>
                                     <constraint firstItem="FEo-gh-HBI" firstAttribute="width" secondItem="yDB-gS-TeN" secondAttribute="width" multiplier="0.3" id="hXH-h7-jUd"/>
                                     <constraint firstAttribute="bottom" secondItem="FEo-gh-HBI" secondAttribute="bottom" id="mja-3N-MWu"/>
                                     <constraint firstItem="FEo-gh-HBI" firstAttribute="height" secondItem="yDB-gS-TeN" secondAttribute="height" id="vgU-iX-OzB"/>

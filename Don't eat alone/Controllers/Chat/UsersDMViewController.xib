@@ -20,20 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aSX-YI-gLs">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aSX-YI-gLs">
+                    <rect key="frame" x="0.0" y="155" width="414" height="707"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcb-6y-6Tf">
+                    <rect key="frame" x="168" y="94" width="78" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aSX-YI-gLs" secondAttribute="trailing" id="3Qf-jd-E1J"/>
+                <constraint firstItem="Qcb-6y-6Tf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="6EB-IE-tcg"/>
+                <constraint firstItem="aSX-YI-gLs" firstAttribute="top" secondItem="Qcb-6y-6Tf" secondAttribute="bottom" id="EAg-GF-rS4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aSX-YI-gLs" secondAttribute="bottom" id="PVi-ot-bTs"/>
-                <constraint firstItem="aSX-YI-gLs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="h0u-pA-zVE"/>
+                <constraint firstItem="Qcb-6y-6Tf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eBE-K2-tNq"/>
                 <constraint firstItem="aSX-YI-gLs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wIq-57-9fw"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="105"/>
+            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
         </view>
     </objects>
     <resources>

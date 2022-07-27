@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A13CA8228896F5500D85A72 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */; };
-		2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */; };
 		2A13CA8428896F5500D85A72 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */; };
 		2A13CA8628896F5500D85A72 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */; };
-		2A13CA8B28896FD700D85A72 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8A28896FD700D85A72 /* MessageViewController.swift */; };
-		2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */; };
 		2A4402DB288E2AC30066442C /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4402D9288E2AC30066442C /* MatchViewController.swift */; };
 		2A4402DC288E2AC30066442C /* MatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4402DA288E2AC30066442C /* MatchViewController.xib */; };
 		B6BCC2F228908258005C9A8D /* UsersDMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCC2F028908258005C9A8D /* UsersDMViewController.swift */; };
@@ -67,13 +63,7 @@
 
 /* Begin PBXFileReference section */
 		2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
-		2A13CA8928896FD400D85A72 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
-		2A13CA8A28896FD700D85A72 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMessageViewController.xib; sourceTree = "<group>"; };
-		2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMessageViewController.swift; sourceTree = "<group>"; };
 		2A4402D9288E2AC30066442C /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		2A4402DA288E2AC30066442C /* MatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchViewController.xib; sourceTree = "<group>"; };
 		B6BCC2F028908258005C9A8D /* UsersDMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDMViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +129,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B667CA692891049F006F1B3B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B6F56858288DD8AE00DA7090 /* ChatViewController.swift */,
+				B6F56859288DD8AE00DA7090 /* ChatViewController.xib */,
+				B6F5685C288E24EC00DA7090 /* ChatTableViewCell.swift */,
+				B6F5685D288E24EC00DA7090 /* ChatTableViewCell.xib */,
+				B6FADA3428901AC900453097 /* MessageTableViewCell.swift */,
+				B6FADA3528901AC900453097 /* MessageTableViewCell.xib */,
+				B6BCC2F028908258005C9A8D /* UsersDMViewController.swift */,
+				B6BCC2F128908258005C9A8D /* UsersDMViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B667CA6A289104AC006F1B3B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BF7D7E69288093C700ACC09F /* SigninViewController.swift */,
+				BF7D7E6A288093C700ACC09F /* SigninViewController.xib */,
+				BF7D7E6D288093DC00ACC09F /* SignupViewController.swift */,
+				BF7D7E6E288093DC00ACC09F /* SignupViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B667CA6B289104BF006F1B3B /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				BF67679F2890C8D7009CE728 /* RestaurantDetailViewController.swift */,
+				BF6767A02890C8D7009CE728 /* RestaurantDetailViewController.xib */,
+				B6BCC2F42890CC8F005C9A8D /* SetDistanceViewController.swift */,
+				B6BCC2F52890CC90005C9A8D /* SetDistanceViewController.xib */,
+				BF8354532890671800C1C7F2 /* HomeViewController.swift */,
+				BF8354542890671800C1C7F2 /* HomeViewController.xib */,
+				BF83544F2890395F00C1C7F2 /* HomeTableViewCell.swift */,
+				BF8354502890395F00C1C7F2 /* HomeTableViewCell.xib */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
 		BF7D7E492880919400ACC09F = {
 			isa = PBXGroup;
 			children = (
@@ -213,36 +244,13 @@
 		BF7D7E8028858F0B00ACC09F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF7D7E69288093C700ACC09F /* SigninViewController.swift */,
-				BF7D7E6A288093C700ACC09F /* SigninViewController.xib */,
-				BF7D7E6D288093DC00ACC09F /* SignupViewController.swift */,
-				BF7D7E6E288093DC00ACC09F /* SignupViewController.xib */,
-				BF8354532890671800C1C7F2 /* HomeViewController.swift */,
-				BF8354542890671800C1C7F2 /* HomeViewController.xib */,
-				BF83544F2890395F00C1C7F2 /* HomeTableViewCell.swift */,
-				BF8354502890395F00C1C7F2 /* HomeTableViewCell.xib */,
-				2A13CA8028896F5500D85A72 /* RestaurantViewController.swift */,
-				2A13CA7C28896F5500D85A72 /* RestaurantViewController.xib */,
+				B667CA6B289104BF006F1B3B /* Restaurants */,
+				B667CA6A289104AC006F1B3B /* Auth */,
+				B667CA692891049F006F1B3B /* Chat */,
 				2A4402D9288E2AC30066442C /* MatchViewController.swift */,
 				2A4402DA288E2AC30066442C /* MatchViewController.xib */,
-				2A13CA8A28896FD700D85A72 /* MessageViewController.swift */,
-				2A13CA8928896FD400D85A72 /* MessageViewController.xib */,
-				2A13CA8D28896FDA00D85A72 /* DetailsMessageViewController.swift */,
-				2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */,
 				2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */,
 				2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */,
-				B6F56858288DD8AE00DA7090 /* ChatViewController.swift */,
-				B6F56859288DD8AE00DA7090 /* ChatViewController.xib */,
-				B6F5685C288E24EC00DA7090 /* ChatTableViewCell.swift */,
-				B6F5685D288E24EC00DA7090 /* ChatTableViewCell.xib */,
-				B6FADA3428901AC900453097 /* MessageTableViewCell.swift */,
-				B6FADA3528901AC900453097 /* MessageTableViewCell.xib */,
-				B6BCC2F028908258005C9A8D /* UsersDMViewController.swift */,
-				B6BCC2F128908258005C9A8D /* UsersDMViewController.xib */,
-				B6BCC2F42890CC8F005C9A8D /* SetDistanceViewController.swift */,
-				B6BCC2F52890CC90005C9A8D /* SetDistanceViewController.xib */,
-				BF67679F2890C8D7009CE728 /* RestaurantDetailViewController.swift */,
-				BF6767A02890C8D7009CE728 /* RestaurantDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -341,7 +349,6 @@
 				B6BCC2F72890CC90005C9A8D /* SetDistanceViewController.xib in Resources */,
 				B6F5685F288E24EC00DA7090 /* ChatTableViewCell.xib in Resources */,
 				BF8354562890671800C1C7F2 /* HomeViewController.xib in Resources */,
-				2A13CA8328896F5500D85A72 /* RestaurantViewController.xib in Resources */,
 				BF8354522890395F00C1C7F2 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7D7E982886F6EE00ACC09F /* LikingUser.swift in Sources */,
-				2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */,
 				BF7D7EA3288740D400ACC09F /* YelpService.swift in Sources */,
 				BF8354552890671800C1C7F2 /* HomeViewController.swift in Sources */,
 				BF7D7EAB2887413600ACC09F /* UserLikeService.swift in Sources */,
@@ -378,7 +384,6 @@
 				BF3E7241288B1B6200C9B79A /* Match.swift in Sources */,
 				BF7D7E942885BB7D00ACC09F /* User.swift in Sources */,
 				BF7D7E6B288093C700ACC09F /* SigninViewController.swift in Sources */,
-				2A13CA8B28896FD700D85A72 /* MessageViewController.swift in Sources */,
 				B6BCC2F228908258005C9A8D /* UsersDMViewController.swift in Sources */,
 				BF7D7E962886F6D900ACC09F /* LikedUser.swift in Sources */,
 				BF7D7EA72887410400ACC09F /* UserService.swift in Sources */,
@@ -392,7 +397,6 @@
 				BF3E723B28897EE500C9B79A /* Message.swift in Sources */,
 				BF7D7E562880919400ACC09F /* AppDelegate.swift in Sources */,
 				BF8354512890395F00C1C7F2 /* HomeTableViewCell.swift in Sources */,
-				2A13CA8F28896FDA00D85A72 /* DetailsMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

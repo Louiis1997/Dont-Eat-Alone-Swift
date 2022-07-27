@@ -54,9 +54,7 @@ class UsersDMViewController: UIViewController, UITableViewDataSource, UITableVie
                         cell.profilePictureImageView.image = loadedImage
                     }
                 }
-        if(self.loggedUser.id == self.users[indexPath.row].id){
-            cell.isHidden = true;
-        }
+        
         return cell;
     }
     
