@@ -8,5 +8,5 @@
 import Foundation
 
 protocol YelpService {
-    func fetchBussinesses(latitude: Double, longitude: Double, completion: @escaping ([RestaurantDetail]) -> Void)
+    func fetchBussinesses(radius: Int, latitude: Double, longitude: Double, completion: @escaping ([RestaurantDetail]) -> Void)
 }

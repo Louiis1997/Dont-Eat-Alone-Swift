@@ -41,7 +41,7 @@ class SigninViewController: UIViewController , UITextFieldDelegate {
         AuthWebService.shared.AuthLogin(email: email, password: pwd, completion: { bool in
             if bool == true {
                 DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                    self.navigationController?.pushViewController(SetDistanceViewController(), animated: true)
                 }
             } else {
                 DispatchQueue.main.async {

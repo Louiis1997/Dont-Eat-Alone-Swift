@@ -12,8 +12,8 @@ class YelpWebService : YelpService {
     
     let apikey = "DnEs9Ad38uZpvudTOXlbouFH13v2xA6ZUCaiLl3EMgf2oXiOcwwd1BvZzAYvSc0dmGu6UZe4nPI9eJiE3AMMx_jJx_yKTiscuiLmd985B5xgjtOcUmXas5HeoUbQYnYx"
     
-    func fetchBussinesses(latitude: Double, longitude: Double, completion: @escaping ([RestaurantDetail]) -> Void) {
-        guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=restaurant&latitude=\(latitude)&longitude=\(longitude)&sort_by=distance") else {
+    func fetchBussinesses(radius: Int, latitude: Double, longitude: Double, completion: @escaping ([RestaurantDetail]) -> Void) {
+        guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=restaurant&latitude=\(latitude)&longitude=\(longitude)&radius=\(radius)&sort_by=distance") else {
             completion([])
             return
         }

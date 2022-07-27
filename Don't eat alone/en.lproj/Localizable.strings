@@ -39,4 +39,10 @@
 "edit.firstname.placeholder" = "Firstname : ";
 "edit.lastname.placeholder" = "Lastname : ";
 "edit.personalStatement.placeholder" = "Personal Statement : ";
+"chat.message.alert.title" = "Invalid";
+"chat.message.alert.empty" = "Message field is empty";
+"chat.message.placeholder" = "Send message";
 "restaurant.detail.start.button" = "Start Matching";
+"chat.message.alert.title" = "Invalid";
+"chat.message.alert.empty" = "Message field is empty";
+"chat.message.placeholder" = "Send message";

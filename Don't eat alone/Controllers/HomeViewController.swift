@@ -16,9 +16,21 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
     @IBOutlet weak var homeItem: UITabBarItem!
     @IBOutlet weak var profilItem: UITabBarItem!
     @IBOutlet weak var messageItem: UITabBarItem!
-    @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var tabbar: UITabBar!
     @IBOutlet weak var restaurantsIndicatorView: UIActivityIndicatorView!
+    
+    var latitude: Double!
+    var longitude: Double!
+    var radius: Int!
+    var token: String!
+    
+    static func newInstance(radius: Int, longitude: Double, latitude: Double) -> HomeViewController {
+        let vc = HomeViewController()
+        vc.latitude = latitude
+        vc.longitude = longitude
+        vc.radius = radius
+        return vc;
+    }
     
     
     var userService: UserService = UserWebService()
@@ -29,35 +41,24 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.homeItem.title = NSLocalizedString("home.tabBarItem.home.title", comment: "")
         self.profilItem.title = NSLocalizedString("home.tabBarItem.profile.title", comment: "")
-        self.logoutButton.setTitle(NSLocalizedString("home.disconnect.button", comment: ""), for: .normal)
-        self.logoutButton.setTitleColor(UIColor.red, for: .normal)
         self.tabbar.delegate = self
         let cellNib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         self.restaurantTableView.register(cellNib, forCellReuseIdentifier: "RESTAURANT_CELL_ID")
         self.restaurantTableView.delegate = self
         self.restaurantTableView.dataSource = self
         self.restaurantsIndicatorView.startAnimating()
-        self.restaurantService.fetchBussinesses(latitude: 48.913789, longitude: 2.360566) { restaurants in
+        self.restaurantService.fetchBussinesses(radius: self.radius, latitude: self.latitude, longitude: self.longitude) { restaurants in
             self.restaurantsIndicatorView.stopAnimating()
             self.restaurants = restaurants
         }
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let filePath = URL(fileURLWithPath: "token.txt", relativeTo: urls[0])
         do {
-            let data = try Data(contentsOf: filePath)
-            let token = String(decoding: data, as: UTF8.self)
+            self.token = try String(contentsOf: filePath)
             self.userService.getLoggedUser(token: token) { user in
                 let image = Data(base64Encoded: user.profilePicture)
                 if image != nil {
@@ -82,9 +83,14 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if(item == homeItem) {
-            self.restaurantTableView.reloadData()
+            self.navigationController?.pushViewController(SetDistanceViewController(), animated: true)
         } else if(item == messageItem) {
-            self.navigationController?.pushViewController(MessageViewController(), animated: true)
+            UserWebService.shared.fetchUsers { users in
+                DispatchQueue.main.async {
+                    let chat = UsersDMViewController.newInstance(users: users)
+                    self.navigationController?.pushViewController(chat, animated: true)
+                }
+            }
         } else if(item == profilItem) {
             self.navigationController?.pushViewController(ProfileViewController(), animated: true)
         }

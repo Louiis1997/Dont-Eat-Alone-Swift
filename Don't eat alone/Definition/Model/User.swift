@@ -7,7 +7,7 @@
 
 import Foundation
 
-class User {
+class User: CustomStringConvertible {
     var id: Int
     var firstName: String
     var lastName: String

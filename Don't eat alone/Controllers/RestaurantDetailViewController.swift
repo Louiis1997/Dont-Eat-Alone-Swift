@@ -62,9 +62,9 @@ class RestaurantDetailViewController: UIViewController, UITabBarDelegate {
 
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if(item == homeItem) {
-            self.navigationController?.pushViewController(HomeViewController(), animated: true)
+            self.navigationController?.pushViewController(SetDistanceViewController(), animated: true)
         } else if(item == messageItem) {
-            self.navigationController?.pushViewController(MessageViewController(), animated: true)
+            self.navigationController?.pushViewController(UsersDMViewController(), animated: true)
         } else if(item == profileItem) {
             self.navigationController?.pushViewController(ProfileViewController(), animated: true)
         }

@@ -106,13 +106,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVL-i6-u5m">
-                    <rect key="frame" x="354" y="13" width="50" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system" title=" ">
-                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -126,7 +119,6 @@
                 <constraint firstItem="pJa-Il-yrA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dd3-TQ-kBh"/>
                 <constraint firstItem="SyY-sQ-5tl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HGl-KT-mhQ"/>
                 <constraint firstItem="SyY-sQ-5tl" firstAttribute="top" secondItem="pJa-Il-yrA" secondAttribute="bottom" constant="250" id="Kqr-4q-RxH"/>
-                <constraint firstAttribute="trailing" secondItem="BVL-i6-u5m" secondAttribute="trailing" constant="10" id="NAB-Op-k8j"/>
                 <constraint firstItem="pJa-Il-yrA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="OhU-j8-wiV"/>
                 <constraint firstItem="U59-Le-rjz" firstAttribute="top" secondItem="XeF-mc-BcB" secondAttribute="bottom" constant="20" id="S23-6Y-odI"/>
                 <constraint firstItem="14Y-yX-NEh" firstAttribute="top" secondItem="U59-Le-rjz" secondAttribute="bottom" constant="20" id="UBO-OC-LdG"/>
@@ -141,7 +133,6 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KlL-q9-YIG" secondAttribute="trailing" constant="20" id="kMC-dk-Q6L"/>
                 <constraint firstItem="s7y-kz-RWS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pyE-eN-04O"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pJa-Il-yrA" secondAttribute="trailing" id="thb-58-kxR"/>
-                <constraint firstItem="pJa-Il-yrA" firstAttribute="top" secondItem="BVL-i6-u5m" secondAttribute="bottom" constant="10" id="vWl-Ig-DGJ"/>
                 <constraint firstItem="s7y-kz-RWS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="y8x-QY-0zp"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="75"/>
@@ -149,7 +140,6 @@
     </objects>
     <resources>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">

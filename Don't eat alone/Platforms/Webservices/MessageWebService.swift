@@ -10,13 +10,14 @@ import Foundation
 class MessageWebService : MessageService {
     public static let shared: MessageService = MessageWebService()
     
-    func createMessage(token: String, receiverId: Int, content: String) {
+    func createMessage(token: String, receiverId: Int, content: String, completion: @escaping (Message) -> Void) {
         guard let url = URL(string: "http://localhost:3000/api/messages") else {
             return
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         let body: [String: Any] = [
             "receiverId": receiverId,
             "content": content
@@ -37,6 +38,21 @@ class MessageWebService : MessageService {
                   201 == httpResponse.statusCode else {
                 print("Invalid Response received from the server")
                 return
+            }
+            guard let responseData
+                    = data else {
+                return
+            }
+            do {
+                if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
+                    let message = Message(dict: jsonResponse)
+                    completion(message!)
+                } else {
+                    print("data maybe corrupted or in wrong format")
+                    throw URLError(.badServerResponse)
+                }
+            } catch let error {
+                print(error.localizedDescription)
             }
         }
         dataTask.resume()
