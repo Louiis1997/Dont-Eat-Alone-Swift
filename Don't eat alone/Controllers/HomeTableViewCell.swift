@@ -42,7 +42,7 @@ class HomeTableViewCell: UITableViewCell {
         self.likedButton.isHidden = true
     }
     
-    func setRestaurant(_ restaurant: RestaurantPreview) {
+    func setRestaurant(_ restaurant: RestaurantDetail) {
         self.restaurantId = restaurant.id
         var url = URL(string: restaurant.image_url)
         if url == nil {

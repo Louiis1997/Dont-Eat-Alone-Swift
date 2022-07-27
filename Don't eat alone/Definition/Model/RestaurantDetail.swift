@@ -16,9 +16,10 @@ class RestaurantDetail {
     var rating: Double
     var price: String?
     var location: RestaurantLocation
+    var distance: Double
     var display_phone: String
     
-    init(id: String, name: String, image_url: String, is_closed: Bool, review_count: Int, rating: Double, price: String?, location: RestaurantLocation, display_phone: String) {
+    init(id: String, name: String, image_url: String, is_closed: Bool, review_count: Int, rating: Double, price: String?, location: RestaurantLocation, distance: Double, display_phone: String) {
         self.id = id
         self.name = name
         self.image_url = image_url
@@ -27,6 +28,7 @@ class RestaurantDetail {
         self.rating = rating
         self.price = price
         self.location = location
+        self.distance = distance
         self.display_phone = display_phone
     }
     
@@ -40,10 +42,11 @@ class RestaurantDetail {
               let price = dict["price"] as? String?,
               let location = dict["location"] as? [String: Any],
               let locationObject = RestaurantLocation(dict: location),
+              let distance = dict["distance"] as? Double,
               let display_phone = dict["display_phone"] as? String else {
             return nil
         }
         
-        self.init(id: id, name: name, image_url: image_url, is_closed: is_closed, review_count: review_count, rating: rating, price: price, location: locationObject, display_phone: display_phone)
+        self.init(id: id, name: name, image_url: image_url, is_closed: is_closed, review_count: review_count, rating: rating, price: price, location: locationObject, distance: distance, display_phone: display_phone)
     }
 }

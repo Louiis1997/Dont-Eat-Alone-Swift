@@ -21,8 +21,8 @@
                 <outlet property="personalStatement" destination="I5U-Np-jA5" id="Iz8-SV-iF7"/>
                 <outlet property="personalStatementLabel" destination="zhs-rL-gwi" id="gbc-gL-0MM"/>
                 <outlet property="prenom" destination="lha-SK-HdW" id="qCJ-EF-UjK"/>
-                <outlet property="profilItem" destination="0qH-7Z-cDw" id="zkY-Y2-KZA"/>
                 <outlet property="profileImage" destination="ke8-eq-jxZ" id="30m-z4-4rr"/>
+                <outlet property="profileItem" destination="0qH-7Z-cDw" id="Z8P-oa-RqX"/>
                 <outlet property="tabbar" destination="Tca-MD-P1w" id="K9R-4j-Mau"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -24,6 +24,8 @@
 		BF3E723D2889800700C9B79A /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E723C2889800700C9B79A /* MessageService.swift */; };
 		BF3E723F2889806900C9B79A /* MessageWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E723E2889806900C9B79A /* MessageWebService.swift */; };
 		BF3E7241288B1B6200C9B79A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E7240288B1B6200C9B79A /* Match.swift */; };
+		BF6767A12890C8D7009CE728 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67679F2890C8D7009CE728 /* RestaurantDetailViewController.swift */; };
+		BF6767A22890C8D7009CE728 /* RestaurantDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6767A02890C8D7009CE728 /* RestaurantDetailViewController.xib */; };
 		BF7D7E562880919400ACC09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E552880919400ACC09F /* AppDelegate.swift */; };
 		BF7D7E5F2880919500ACC09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7D7E5E2880919500ACC09F /* Assets.xcassets */; };
 		BF7D7E622880919500ACC09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7D7E602880919500ACC09F /* LaunchScreen.storyboard */; };
@@ -73,6 +75,8 @@
 		BF3E723C2889800700C9B79A /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		BF3E723E2889806900C9B79A /* MessageWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWebService.swift; sourceTree = "<group>"; };
 		BF3E7240288B1B6200C9B79A /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		BF67679F2890C8D7009CE728 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		BF6767A02890C8D7009CE728 /* RestaurantDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantDetailViewController.xib; sourceTree = "<group>"; };
 		BF7D7E522880919400ACC09F /* Don't eat alone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Don't eat alone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D7E552880919400ACC09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF7D7E5E2880919500ACC09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 				2A13CA8C28896FD800D85A72 /* DetailsMessageViewController.xib */,
 				2A13CA7D28896F5500D85A72 /* ProfileViewController.swift */,
 				2A13CA7B28896F5500D85A72 /* ProfileViewController.xib */,
+				BF67679F2890C8D7009CE728 /* RestaurantDetailViewController.swift */,
+				BF6767A02890C8D7009CE728 /* RestaurantDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 				2A13CA8228896F5500D85A72 /* ProfileViewController.xib in Resources */,
 				BF7D7E732880A24800ACC09F /* Localizable.strings in Resources */,
 				BF7D7E6C288093C700ACC09F /* SigninViewController.xib in Resources */,
+				BF6767A22890C8D7009CE728 /* RestaurantDetailViewController.xib in Resources */,
 				BF7D7E622880919500ACC09F /* LaunchScreen.storyboard in Resources */,
 				BF7D7E70288093DC00ACC09F /* SignupViewController.xib in Resources */,
 				2A4402DC288E2AC30066442C /* MatchViewController.xib in Resources */,
@@ -325,6 +332,7 @@
 				BF3E72312887571C00C9B79A /* RestaurantLikeByUser.swift in Sources */,
 				BF7D7EAD2887415000ACC09F /* RestaurantLikeService.swift in Sources */,
 				BF7D7E922885BB6800ACC09F /* RestaurantLike.swift in Sources */,
+				BF6767A12890C8D7009CE728 /* RestaurantDetailViewController.swift in Sources */,
 				2A13CA8428896F5500D85A72 /* ProfileViewController.swift in Sources */,
 				BF7D7E9A2886F98C00ACC09F /* RestaurantLocation.swift in Sources */,
 				BF3E72352888E73600C9B79A /* AuthWebService.swift in Sources */,

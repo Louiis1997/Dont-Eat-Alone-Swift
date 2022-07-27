@@ -39,3 +39,4 @@
 "edit.firstname.placeholder" = "Firstname : ";
 "edit.lastname.placeholder" = "Lastname : ";
 "edit.personalStatement.placeholder" = "Personal Statement : ";
+"restaurant.detail.start.button" = "Start Matching";

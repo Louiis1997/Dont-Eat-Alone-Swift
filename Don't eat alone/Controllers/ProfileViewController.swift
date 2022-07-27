@@ -20,7 +20,7 @@ class ProfileViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var personalStatement: UILabel!
     @IBOutlet weak var homeItem: UITabBarItem!
     @IBOutlet weak var messageItem: UITabBarItem!
-    @IBOutlet weak var profilItem: UITabBarItem!
+    @IBOutlet weak var profileItem: UITabBarItem!
     @IBOutlet weak var tabbar: UITabBar!
     
     var userService: UserService = UserWebService()
@@ -31,7 +31,7 @@ class ProfileViewController: UIViewController, UITabBarDelegate {
         self.firstNameLabel.text = NSLocalizedString("edit.firstname.placeholder", comment: "")
         self.personalStatementLabel.text = NSLocalizedString("edit.personalStatement.placeholder", comment: "")
         self.homeItem.title = NSLocalizedString("home.tabBarItem.home.title", comment: "")
-        self.profilItem.title = NSLocalizedString("home.tabBarItem.profile.title", comment: "")
+        self.profileItem.title = NSLocalizedString("home.tabBarItem.profile.title", comment: "")
         self.tabbar.delegate = self
         
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)

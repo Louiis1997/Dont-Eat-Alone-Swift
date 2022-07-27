@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import CoreLocation
 
-class HomeViewController: UIViewController, CLLocationManagerDelegate, UITabBarDelegate, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITabBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var firstName: UILabel!
@@ -23,19 +22,19 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, UITabBarD
     
     
     var userService: UserService = UserWebService()
-    var locationManager: CLLocationManager!
-    var location: String?
-    var currentLocation: CLLocation? {
-        didSet {
-            self.location = self.currentLocation?.description
-        }
-    }
-    var lockLocation: Bool = true
     var restaurantService: YelpService = YelpWebService()
-    var restaurants: [RestaurantPreview] = [] {
+    var restaurants: [RestaurantDetail] = [] {
         didSet {
             self.restaurantTableView.reloadData()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     override func viewDidLoad() {
@@ -50,9 +49,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, UITabBarD
         self.restaurantTableView.delegate = self
         self.restaurantTableView.dataSource = self
         self.restaurantsIndicatorView.startAnimating()
-        self.locationManager = CLLocationManager()
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.restaurantService.fetchBussinesses(latitude: 48.913789, longitude: 2.360566) { restaurants in
             self.restaurantsIndicatorView.stopAnimating()
             self.restaurants = restaurants
@@ -112,6 +108,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, UITabBarD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let restaurant = self.restaurants[indexPath.row]
-        print(restaurant.name)
+        DispatchQueue.main.async {
+            let restaurantDetail = RestaurantDetailViewController.newInstance(restaurant : restaurant)
+            self.navigationController?.pushViewController(restaurantDetail, animated: true)
+        }
     }
 }
