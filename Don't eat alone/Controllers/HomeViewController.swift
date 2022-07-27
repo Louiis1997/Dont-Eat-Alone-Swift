@@ -77,10 +77,6 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
         }
     }
     
-    @IBAction func logoutHandler(_ sender: Any) {
-        self.navigationController?.pushViewController(SigninViewController(), animated: true)
-    }
-    
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if(item == homeItem) {
             self.navigationController?.pushViewController(SetDistanceViewController(), animated: true)
