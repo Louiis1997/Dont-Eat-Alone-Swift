@@ -42,7 +42,6 @@
 		BF7D7E962886F6D900ACC09F /* LikedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E952886F6D900ACC09F /* LikedUser.swift */; };
 		BF7D7E982886F6EE00ACC09F /* LikingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E972886F6EE00ACC09F /* LikingUser.swift */; };
 		BF7D7E9A2886F98C00ACC09F /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E992886F98C00ACC09F /* RestaurantLocation.swift */; };
-		BF7D7E9C2887065E00ACC09F /* RestaurantPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7E9B2887065E00ACC09F /* RestaurantPreview.swift */; };
 		BF7D7EA3288740D400ACC09F /* YelpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7EA2288740D400ACC09F /* YelpService.swift */; };
 		BF7D7EA5288740F700ACC09F /* YelpWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7EA4288740F700ACC09F /* YelpWebService.swift */; };
 		BF7D7EA72887410400ACC09F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D7EA62887410400ACC09F /* UserService.swift */; };
@@ -96,7 +95,6 @@
 		BF7D7E952886F6D900ACC09F /* LikedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedUser.swift; sourceTree = "<group>"; };
 		BF7D7E972886F6EE00ACC09F /* LikingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikingUser.swift; sourceTree = "<group>"; };
 		BF7D7E992886F98C00ACC09F /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
-		BF7D7E9B2887065E00ACC09F /* RestaurantPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPreview.swift; sourceTree = "<group>"; };
 		BF7D7EA2288740D400ACC09F /* YelpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpService.swift; sourceTree = "<group>"; };
 		BF7D7EA4288740F700ACC09F /* YelpWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpWebService.swift; sourceTree = "<group>"; };
 		BF7D7EA62887410400ACC09F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				BF7D7E972886F6EE00ACC09F /* LikingUser.swift */,
 				BF3E7240288B1B6200C9B79A /* Match.swift */,
 				BF3E723A28897EE500C9B79A /* Message.swift */,
-				BF7D7E9B2887065E00ACC09F /* RestaurantPreview.swift */,
 				BF7D7E812885981800ACC09F /* RestaurantDetail.swift */,
 				BF7D7E992886F98C00ACC09F /* RestaurantLocation.swift */,
 			);
@@ -324,7 +321,6 @@
 				2A13CA8728896F5500D85A72 /* RestaurantViewController.swift in Sources */,
 				BF7D7EA3288740D400ACC09F /* YelpService.swift in Sources */,
 				BF8354552890671800C1C7F2 /* HomeViewController.swift in Sources */,
-				BF7D7E9C2887065E00ACC09F /* RestaurantPreview.swift in Sources */,
 				BF7D7EAB2887413600ACC09F /* UserLikeService.swift in Sources */,
 				BF7D7E6F288093DC00ACC09F /* SignupViewController.swift in Sources */,
 				BF3E723F2889806900C9B79A /* MessageWebService.swift in Sources */,
